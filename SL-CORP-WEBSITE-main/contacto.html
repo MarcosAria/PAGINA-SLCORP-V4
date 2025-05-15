@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="stylesheet" href="assets/css/estructura.css">
+    <link rel="stylesheet" href="assets/css/contacto.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+
+</head>
+
+
+<nav>
+    <div class="logo">SL Corp</div>
+    <input type="checkbox" id="click" />
+    <label for="click" class="menu-btn">
+        <i class="fas fa-bars"></i>
+    </label>
+    <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="nosotros.html">Nosotros</a></li>
+        <li><a href="servicios.html">Servicios</a></li>
+        <li><a href="Fuerza-slider.html">Fuerza laboral</a></li>
+        <li><a class="active" href="contacto.html">Contacto</a></li>
+    </ul>
+</nav>
+
+
+<body>
+    <div class="contenedor">
+
+        <section class="contacto">
+
+
+            <div class="slides-base">
+
+                <div class="contacto-container">
+
+                    <div class="left">
+                        <p class="titulo">Contáctanos</p>
+                        <p class="ubicacion"> <i class="fa-solid fa-circle-info"></i> Ubicación: <br>
+                            Villa Hermosa Tabasco<br>
+                            Calle Turín #206 <br>
+                            Fracc. La Gloria, Centro Tabasco
+                            C.P.86170</p>
+                        
+                        <p class="tel3"> <i class="fa-solid fa-envelope"></i> Correo: contacto@slcorp.com.mx</p>
+
+                        <p class="tel1">Oficina:<br>
+
+                           <i class="fa-solid fa-phone"></i> 99 31 31 30 88
+
+                        </p>
+
+                        <p class="tel2">Celular:<br>
+
+                            <i class="fa-solid fa-phone"></i> 99 31 60 59 89</p>
+
+                      
+                    </div>
+
+
+
+                    
+                        <form action="https://formsubmit.co/garciaaldo437@gmail.com" method="POST" class="contacto-form">
+                            <h2 class="titulo-contacto">¿Tienes alguna duda?</h2>
+                            <h3 class="contacto-h3">Escríbenos y con gusto te atenderemos.</h3>
+
+                            <div class="input-group">
+
+                                <input class="contacto-input" type="text" id="nombre" name="name"
+                                    placeholder="Tu nombre" required>
+
+                                <input class="contacto-input" type="text" id="apellidos" name="apellidos"
+                                    placeholder="Tus apellidos" required>
+
+                                <input class="contacto-input" type="tel" id="phone" name="phone"
+                                    placeholder="Tu telefono">
+
+
+                                <input class="contacto-input" type="email" id="email" name="email"
+                                    placeholder="Tu Email">
+
+
+
+
+                                <input class="contacto-input" type="text" id="asunto" name="asunto" placeholder="Asunto"
+                                    required>
+
+                                <input class="contacto-input" type="text" id="empresa" name="empresa"
+                                    placeholder="Nombre de la empresa" required>
+
+
+
+
+                            </div>
+
+                            <div>
+                                <textarea id="mensaje" name="mensaje" cols="30" rows="5"
+                                    placeholder="Tu mensaje aquí..."></textarea>
+                            </div>
+
+                            <input type="submit" value="ENVIAR MENSAJE" class="btn">
+
+                            <input class="contacto-input" type="hidden" name="_next"
+                                value="http://127.0.0.1:5500/SL-CORP-WEBSITE-main/contacto.html">
+                            <input class="contacto-input" type="hidden" name="_captcha" value="false">
+                        </form>
+                   
+
+                </div>
+            </div>
+        </section>
+
+        <section class="mapa">
+            <div class="slides-base">
+              <div class="mapa-container">
+                <div class="mapa-header">
+                  <h2 class="mapa-title">Nuestra Ubicación</h2>
+                  <div class="mapa-actions">
+                    <a href="https://www.google.com/maps/dir//Tur%C3%ADn+206+Plutarco+Elias+Calles+86170+Villahermosa,+Tab.+M%C3%A9xico/@17.9574701,-92.9322261,15z/data=!4m9!4m8!1m0!1m5!1m1!1s0x85edd9ddd1595bf9:0x667a9a631ecef310!2m2!1d-92.9322261!2d17.9574701!3e0" 
+                       target="_blank" 
+                       class="mapa-btn"
+                       id="directions-btn">
+                      <i class="fas fa-directions"></i> Cómo llegar
+                    </a>
+                    <a href="tel:" class="mapa-btn">
+                      <i class="fas fa-phone"></i> Llamar
+                    </a>
+                  </div>
+                </div>
+                <div class="mapa-iframe-container">
+                  <iframe src="https://www.google.com/maps/embed?pb=!1m19!1m8!1m3!1d30363.654787160776!2d-92.9322261!3d17.9574701!3m2!1i1024!2i768!4f13.1!4m8!3e6!4m0!4m5!1s0x85edd9ddd1595bf9:0x667a9a631ecef310!2sTur%C3%ADn+206+Plutarco+Elias+Calles+86170+Villahermosa,+Tab.+M%C3%A9xico!3m2!1d17.9574701!2d-92.9322261!5e0!3m2!1ses-419!2smx!4v1746668661131!5m2!1ses-419!2smx" 
+                    allowfullscreen 
+                    loading="lazy" 
+                    referrerpolicy="no-referrer-when-downgrade">
+                  </iframe>
+                </div>
+              </div>
+            </div>
+          </section>
+          
+         
+         
+
+          <script>
+          document.addEventListener('DOMContentLoaded', function() {
+          
+            const directionsBtn = document.getElementById('directions-btn');
+            
+         
+            directionsBtn.addEventListener('click', function() {
+              console.log('Botón "Cómo llegar" clickeado');
+             
+            });
+            
+          
+          });
+          </script>
+    </div>
+</body>
+
+</html>

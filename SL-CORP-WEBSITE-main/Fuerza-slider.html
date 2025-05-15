@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fuerza laboral</title>
+
+  <link rel="stylesheet" href="assets/css/estructura.css" />
+   <link rel="stylesheet" href="assets/css/fuerza.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+  <!--=============== GOOGLE FONTS ===============-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Buenard:wght@400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <!--=============== REMIXICONS ===============-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.css" crossorigin="">
+   <!--=============== FAVICON ===============-->
+   <link
+   rel="shortcut icon"
+   href="assets/img/favicon.png"
+   type="image/x-icon"
+ />
+</head>
+
+<body>
+  <nav>
+    <div class="logo">SL Corp</div>
+    <input type="checkbox" id="click" />
+    <label for="click" class="menu-btn">
+      <i class="fas fa-bars"></i>
+    </label>
+    <ul>
+      <li><a href="index.html">Inicio</a></li>
+      <li><a href="nosotros.html">Nosotros</a></li>
+      <li><a href="servicios.html">Servicios</a></li>
+      <li><a class="active" href="Fuerza-slider.html">Fuerza laboral</a></li>
+      <li><a href="contacto.html">Contacto</a></li>
+    </ul>
+  </nav>
+  <div class="contenedor-slider">
+      <section id="NOMBRE DE ESTA PAGINA">
+
+       <div class="slides-base">
+        <section id="slider1">
+      <div class="slider">
+        <button class="slider--btn slider--btn__prev">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <path d="m15 18-6-6 6-6" />
+          </svg>
+        </button>
+
+        <div class="slides__wrapper">
+          <div class="slides">
+            <!-- slide 1 - Dr. Lucio -->
+            <div class="slide" data-current>
+              <div class="slide__inner">
+                <div class="slide--image__wrapper">
+                  <img
+                    class="slide--image"
+                    src="assets/img/Dr Lucio Heriberto Sosa Cerda.jpg"
+                    alt="Dr. Lucio Heriberto Sosa Cerda"
+                  />
+                </div>
+              </div>
+            </div>
+            <div
+              class="slide__bg"
+              style="
+                --bg: url(../img/fondo-contacto.JPEG);
+                --dir: 0;
+              "
+              data-current
+            ></div>
+
+            <!-- slide 2 - Abdy -->
+            <div class="slide" data-next>
+              <div class="slide__inner">
+                <div class="slide--image__wrapper">
+                  <img
+                    class="slide--image"
+                    src="assets/img/Lic Abdy Abigail López Montuy.jpg"
+                    alt="L.C.P. Abdy Abigail López Montuy"
+                  />
+                </div>
+              </div>
+            </div>
+            <div
+              class="slide__bg"
+              style="
+                --bg: url(../img/fondo-contacto.JPEG);
+                --dir: 1;
+              "
+              data-next
+            ></div>
+
+            <!-- slide 3 - Alberto -->
+            <div class="slide" data-previous>
+              <div class="slide__inner">
+                <div class="slide--image__wrapper">
+                  <img
+                    class="slide--image"
+                    src="assets/img/Lic Alberto J. Rodríguez Pelayo.jpeg"
+                    alt="C.P. Alberto J. Rodríguez Pelayo"
+                  />
+                </div>
+              </div>
+            </div>
+            <div
+              class="slide__bg"
+              style="
+                --bg: url(../img/fondo-contacto.JPEG);
+                --dir: -1;
+              "
+              data-previous
+            ></div>
+
+            <!-- slide 4 - Juan -->
+            <div class="slide">
+              <div class="slide__inner">
+                <div class="slide--image__wrapper">
+                  <img
+                    class="slide--image"
+                    src="assets/img/Lic Juan Jose Sosa de la Fuente.jpg"
+                    alt="Lic. Juan José Sosa de la Fuente"
+                  />
+                </div>
+              </div>
+            </div>
+            <div
+              class="slide__bg"
+              style="
+                --bg: url(../img/fondo-contacto.JPEG);
+                --dir: 2;
+              "
+            ></div>
+
+            <!-- slide 5 - Luis -->
+            <div class="slide">
+              <div class="slide__inner">
+                <div class="slide--image__wrapper">
+                  <img
+                    class="slide--image"
+                    src="assets/img/Lic Luis Fernando Velázquez Valencia.jpg"
+                    alt="Luis Fernando Velázquez Valencia"
+                  />
+                </div>
+              </div>
+            </div>
+            <div
+              class="slide__bg"
+              style="
+                --bg: url(../img/fondo-contacto.JPEG);
+                --dir: -2;
+              "
+            ></div>
+
+            <!-- slide 6 - Viviana -->
+            <div class="slide">
+              <div class="slide__inner">
+                <div class="slide--image__wrapper">
+                  <img
+                    class="slide--image"
+                    src="assets/img/Lic Viviana Del Valle Cabello Espinoza (1).jpg"
+                    alt="Viviana Cabello Espinoza"
+                  />
+                </div>
+              </div>
+            </div>
+            <div
+              class="slide__bg"
+              style="
+                --bg: url(../img/fondo-contacto.JPEG);
+                --dir: 3;
+              "
+            ></div>
+
+            <!-- slide 7 - Paula -->
+            <div class="slide">
+              <div class="slide__inner">
+                <div class="slide--image__wrapper">
+                  <img
+                    class="slide--image"
+                    src="assets/img/Lic Paula Crespo Mijangos.png"
+                    alt="Paula Crespo Mijangos"
+                  />
+                </div>
+              </div>
+            </div>
+            <div
+              class="slide__bg"
+              style="
+                --bg: url(../img/fondo-contacto.JPEG);
+                --dir: -3;
+              "
+            ></div>
+
+            <!-- slide 8 - Héctor -->
+            <div class="slide">
+              <div class="slide__inner">
+                <div class="slide--image__wrapper">
+                  <img
+                    class="slide--image"
+                    src="assets/img/Ing Héctor Osiel Sosa De La Fuente.jpg"
+                    alt="Héctor Osiel Sosa de la Fuente"
+                  />
+                </div>
+              </div>
+            </div>
+            <div
+              class="slide__bg"
+              style="
+                --bg: url(../img/fondo-contacto.JPEG);
+                --dir: 4;
+              "
+            ></div>
+
+            <!-- slide 9 - Yair -->
+            <div class="slide">
+              <div class="slide__inner">
+                <div class="slide--image__wrapper">
+                  <img
+                    class="slide--image"
+                    src="assets/img/Lic Yair E. Torres Alcázar.jpg"
+                    alt="Lic. Yair E. Torres Alcázar"
+                  />
+                </div>
+              </div>
+            </div>
+            <div
+              class="slide__bg"
+              style="
+                --bg: url(../img/fondo-contacto.JPEG);
+                --dir: -4;
+              "
+            ></div>
+          </div>
+          <div class="slides--infos">
+            <!-- Slide Info 1 - Dr. Lucio -->
+            <div class="slide-info" data-current>
+              <div class="slide-info__inner">
+                <div class="slide-info--text__wrapper">
+                  <div data-title class="slide-info--text">
+                    <span>Dr. Lucio Heriberto <br />Sosa Cerda</span>
+                  </div>
+                  <div data-description class="slide-info--text">
+                    <span
+                      >Experto en Derecho Corporativo y Fiscal</span
+                    >
+                  </div>
+                  <a href="pagina-lucio.html" class="employee-btn"
+                    >Ver perfil completo</a
+                  >
+                </div>
+              </div>
+            </div>
+
+            <!-- Slide Info 2 - Abdy -->
+            <div class="slide-info" data-next>
+              <div class="slide-info__inner">
+                <div class="slide-info--text__wrapper">
+                  <div data-title class="slide-info--text">
+                    <span>L.C.P. Abdy Abigail <br />López Montuy</span>
+                  </div>
+                  <div data-description class="slide-info--text">
+                    <span
+                      >Gerente Contable/Administradora de <br />Consultoría
+                      Fiscal y Financiera</span
+                    >
+                  </div>
+                  <a href="pagina-abdy.html" class="employee-btn"
+                    >Ver perfil completo</a
+                  >
+                </div>
+              </div>
+            </div>
+
+            <!-- Slide Info 3 - Alberto -->
+            <div class="slide-info" data-previous>
+              <div class="slide-info__inner">
+                <div class="slide-info--text__wrapper">
+                  <div data-title class="slide-info--text">
+                    <span>C.P. Alberto J.<br />Rodríguez Pelayo</span>
+                  </div>
+                  <div data-description class="slide-info--text">
+                    <span
+                      >Administrador de consultoría <br />Fiscal y Financiera</span>
+                  </div>
+                  <a href="pagina-alberto.html" class="employee-btn"
+                    >Ver perfil completo</a
+                  >
+                </div>
+              </div>
+            </div>
+
+            <!-- Slide Info 4 - Juan -->
+            <div class="slide-info">
+              <div class="slide-info__inner">
+                <div class="slide-info--text__wrapper">
+                  <div data-title class="slide-info--text">
+                    <span>Lic. Juan José <br />Sosa de la Fuente</span>
+                  </div>
+                  <div data-description class="slide-info--text">
+                    <span>Auxiliar Contable</span>
+                  </div>
+                  <a href="pagina-juan.html" class="employee-btn"
+                    >Ver perfil completo</a
+                  >
+                </div>
+              </div>
+            </div>
+
+            <!-- Slide Info 5 - Luis -->
+            <div class="slide-info">
+              <div class="slide-info__inner">
+                <div class="slide-info--text__wrapper">
+                  <div data-title class="slide-info--text">
+                    <span>Lic. Luis Fernando <br />Velázquez Valencia</span>
+                  </div>
+                  <div data-description class="slide-info--text">
+                    <span>Coordinador en Impuestos</span>
+                  </div>
+                  <a href="pagina-luis.html" class="employee-btn"
+                    >Ver perfil completo</a
+                  >
+                </div>
+              </div>
+            </div>
+
+            <!-- Slide Info 6 - Viviana -->
+            <div class="slide-info">
+              <div class="slide-info__inner">
+                <div class="slide-info--text__wrapper">
+                  <div data-title class="slide-info--text">
+                    <span>Viviana <br />Cabello Espinoza</span>
+                  </div>
+                  <div data-description class="slide-info--text">
+                    <span>Coordinadora de Recursos Humanos</span>
+                  </div>
+                  <a href="pagina-viviana.html" class="employee-btn"
+                    >Ver perfil completo</a
+                  >
+                </div>
+              </div>
+            </div>
+
+            <!-- Slide Info 7 - Paula -->
+            <div class="slide-info">
+              <div class="slide-info__inner">
+                <div class="slide-info--text__wrapper">
+                  <div data-title class="slide-info--text">
+                    <span>Paula <br />Crespo Mijangos</span>
+                  </div>
+                  <div data-description class="slide-info--text">
+                    <span>Auxiliar Contable – Área de Administración de Nómina</span>
+                  </div>
+                  <a href="pagina-paula.html" class="employee-btn"
+                    >Ver perfil completo</a
+                  >
+                </div>
+              </div>
+            </div>
+
+            <!-- Slide Info 8 - Héctor -->
+            <div class="slide-info">
+              <div class="slide-info__inner">
+                <div class="slide-info--text__wrapper">
+                  <div data-title class="slide-info--text">
+                    <span>Héctor Osiel <br />Sosa de la Fuente</span>
+                  </div>
+                  <div data-description class="slide-info--text">
+                    <span>Administrador de Tecnologías de la Información (TI)</span>
+                  </div>
+                  <a href="pagina-hector.html" class="employee-btn"
+                    >Ver perfil completo</a
+                  >
+                </div>
+              </div>
+            </div>
+
+            <!-- Slide Info 9 - Yair -->
+            <div class="slide-info">
+              <div class="slide-info__inner">
+                <div class="slide-info--text__wrapper">
+                  <div data-title class="slide-info--text">
+                    <span>Lic. Yair E. <br />Torres Alcázar</span>
+                  </div>
+                  <div data-description class="slide-info--text">
+                    <span>Gerente Legal/Corporativo - Asociado de Litigio Fiscal <br> y Compliance</span>
+                  </div>
+                  <a href="pagina-yair.html" class="employee-btn"
+                    >Ver perfil completo</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <button class="slider--btn slider--btn__next">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <path d="m9 18 6-6-6-6" />
+          </svg>
+        </button>
+      </div>
+
+      <div class="loader">
+        <span class="loader__text">0%</span>
+      </div>
+
+      <script type="module" src="assets/js/fuerza.js"></script>
+    </section>
+
+        </div>
+      </section>
+ </div>
+</body>
+
+</html>
