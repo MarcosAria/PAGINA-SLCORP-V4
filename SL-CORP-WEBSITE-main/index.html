@@ -11,6 +11,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
   <link rel="stylesheet" href="assets/css/Fuerza laboral.css" />
   <link rel="stylesheet" href="assets/css/estructura.css" />
+  <link rel="stylesheet" href="assets/css/preloader.css" />
   <!--=============== GOOGLE FONTS ===============-->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -27,6 +28,21 @@
 </head>
 
 <body>
+
+  <!--================= PRELOADER ===============-->
+
+  <div id="preloader-overlay">
+    <div class="preloader-content">
+      <span class="loader">
+        <span class="loader-inner"></span>
+      </span>
+    </div>
+  </div>
+
+
+
+
+
   <nav>
     <div class="logo">SL Corp</div>
     <input type="checkbox" id="click" />
@@ -44,7 +60,7 @@
 
   <!--================= SECCION 1 ===============-->
 
-<div class="contenedor">
+  <div class="contenedor">
     <section id="seccion-1">
       <div class="slides-base slide1">
         <!-- carousel -->
@@ -137,9 +153,10 @@
           </div>
           <!-- next prev -->
           <div class="arrows">
-            <button id="prev"><</button>
-            <button id="next">></button>
-        </div>
+            <button id="prev">
+              < <button id="next">>
+            </button>
+          </div>
           <!-- time running -->
           <div class="time"></div>
         </div>
@@ -398,7 +415,8 @@
 
           <div class="testimonios-cta">
             <p>¿Quieres compartir tu experiencia con nosotros?</p>
-            <a href="https://www.google.com/search?client=opera-gx&hs=yV7&sca_esv=db94c43514cdc207&sxsrf=AHTn8zoCzzCWWKyfV667g9mmNfTj6MO_MQ:1747113745746&si=APYL9bs7Hg2KMLB-4tSoTdxuOx8BdRvHbByC_AuVpNyh0x2KzbM01e0tCgxC59uFowyTykTRsM2iwRIBT2ohYCLus4sBQYKh9T8qDsKvY4ZpSBnOiwxh8C6JlwD4q9TfmycSTWUQ-a4CP7uiqJH1InKk4IzDWD76bg%3D%3D&q=SL+Servicios+Corporativos+Opiniones&sa=X&ved=2ahUKEwjV7cnx2Z-NAxVwJNAFHavMMBkQ0bkNegQILhAE&biw=2087&bih=1113&dpr=0.9" class="cta-button">Deja tu reseña</a>
+            <a href="https://www.google.com/search?client=opera-gx&hs=yV7&sca_esv=db94c43514cdc207&sxsrf=AHTn8zoCzzCWWKyfV667g9mmNfTj6MO_MQ:1747113745746&si=APYL9bs7Hg2KMLB-4tSoTdxuOx8BdRvHbByC_AuVpNyh0x2KzbM01e0tCgxC59uFowyTykTRsM2iwRIBT2ohYCLus4sBQYKh9T8qDsKvY4ZpSBnOiwxh8C6JlwD4q9TfmycSTWUQ-a4CP7uiqJH1InKk4IzDWD76bg%3D%3D&q=SL+Servicios+Corporativos+Opiniones&sa=X&ved=2ahUKEwjV7cnx2Z-NAxVwJNAFHavMMBkQ0bkNegQILhAE&biw=2087&bih=1113&dpr=0.9"
+              class="cta-button">Deja tu reseña</a>
           </div>
         </div>
       </div>
@@ -420,20 +438,22 @@
 
   </section>
 
-  <!--=============== JS ===============-->
+
 
   <!--=============== SWIPER HERO JS ===============-->
   <script src="assets/js/app.js"></script>
 
-  <script src="app.js"></script>
+
   <!--=============== SWIPER JS ===============-->
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
   <!--=============== MAIN JS ===============-->
   <script src="assets/js/main.js"></script>
 
+  <!--=============== PRE-LOADER ===============-->
+  <script src="assets/js/loader.js"></script>
 
-  </div>
+
 
 </body>
 

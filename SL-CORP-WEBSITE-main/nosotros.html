@@ -10,22 +10,33 @@
   <link rel="stylesheet" href="assets/css/style.css" />
   <link rel="stylesheet" href="assets/css/estructura.css" />
   <link rel="stylesheet" href="assets/css/nosotros.css" />
+  <link rel="stylesheet" href="assets/css/preloader.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
   <!--=============== GOOGLE FONTS ===============-->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Buenard:wght@400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Buenard:wght@400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
   <!--=============== REMIXICONS ===============-->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.css" crossorigin="">
-   <!--=============== FAVICON ===============-->
-   <link
-   rel="shortcut icon"
-   href="assets/img/favicon.png"
-   type="image/x-icon"
- />
+  <!--=============== FAVICON ===============-->
+  <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon" />
 </head>
 
 <body>
+
+  <!--================= PRELOADER ===============-->
+
+  <div id="preloader-overlay">
+    <div class="preloader-content">
+      <span class="loader">
+        <span class="loader-inner"></span>
+      </span>
+    </div>
+  </div>
+
+
   <nav>
     <div class="logo">SL Corp</div>
     <input type="checkbox" id="click" />
@@ -41,29 +52,37 @@
     </ul>
   </nav>
   <div class="contenedor">
-  <section id="propósito">
-    <div class="slides-base">
-      <div class="S2-container">
-        <div class="fondo fondo-izquierda fondo-izquierda-proposito">
-          <div class="S2-text-left texto-seccion-izquierdo texto-seccion-izquierdo-desktop proposito-text-left ">
-            Nuestro propósito
-            <a href="contacto.html" class="boton-proposito">CONTÁCTANOS</a>
-          </div>
-        </div>
-        <div class="fondo fondo-derecha fondo-derecha-proposito">
-          <div class="S2-text-right texto-seccion-dos-desktop proposito-text-right">
-            En SL CORP, nuestro propósito es proteger el patrimonio empresarial y personal de los hombres y mujeres de negocios. <br><br> Los conocimientos y los servicios de alta especialidad que ofrecemos generan un mejor entorno empresarial, al hacerlo coadyuvamos en la productividad de los negocios para nuestros empresarios, nuestros clientes y nuestras comunidades. Somos líderes en la prestación de servicios corporativos y legales.
-          </div>
-          <div class="S2-text-left texto-seccion-izquierdo texto-seccion-dos-responsive">
-            <h1>Nuestro <br> propósito</h1>
-            <div class="S2-text-right">
-              En SL CORP, nuestro propósito es proteger el patrimonio empresarial y personal de los hombres y mujeres de negocios. Los conocimientos y los servicios de alta especialidad que ofrecemos generan un mejor entorno empresarial, al hacerlo coadyuvamos en la productividad de los negocios para nuestros empresarios, nuestros clientes y nuestras comunidades. Somos líderes en la prestación de servicios corporativos y legales.
+    <section id="propósito">
+      <div class="slides-base">
+        <div class="S2-container">
+          <div class="fondo fondo-izquierda fondo-izquierda-proposito">
+            <div class="S2-text-left texto-seccion-izquierdo texto-seccion-izquierdo-desktop proposito-text-left ">
+              Nuestro propósito
+              <a href="contacto.html" class="boton-proposito">CONTÁCTANOS</a>
             </div>
-            <a href="contacto.html">CONTÁCTANOS</a>
+          </div>
+          <div class="fondo fondo-derecha fondo-derecha-proposito">
+            <div class="S2-text-right texto-seccion-dos-desktop proposito-text-right">
+              En SL CORP, nuestro propósito es proteger el patrimonio empresarial y personal de los hombres y mujeres de
+              negocios. <br><br> Los conocimientos y los servicios de alta especialidad que ofrecemos generan un mejor
+              entorno empresarial, al hacerlo coadyuvamos en la productividad de los negocios para nuestros empresarios,
+              nuestros clientes y nuestras comunidades. Somos líderes en la prestación de servicios corporativos y
+              legales.
+            </div>
+            <div class="S2-text-left texto-seccion-izquierdo texto-seccion-dos-responsive">
+              <h1>Nuestro <br> propósito</h1>
+              <div class="S2-text-right">
+                En SL CORP, nuestro propósito es proteger el patrimonio empresarial y personal de los hombres y mujeres
+                de negocios. Los conocimientos y los servicios de alta especialidad que ofrecemos generan un mejor
+                entorno empresarial, al hacerlo coadyuvamos en la productividad de los negocios para nuestros
+                empresarios, nuestros clientes y nuestras comunidades. Somos líderes en la prestación de servicios
+                corporativos y legales.
+              </div>
+              <a href="contacto.html">CONTÁCTANOS</a>
+            </div>
           </div>
         </div>
       </div>
-    </div>
     </section>
 
     <section id="visión">
@@ -77,23 +96,34 @@
           </div>
           <div class="fondo fondo-derecha fondo-izquierda-vision">
             <div class="S2-text-right texto-seccion-dos-desktop proposito-text-right">
-              Ofrecer un servicio de alta calidad a través de la consultoría fiscal y defensa especializada en materia administrativa, laboral, seguridad social, mercantil y societario, dando soluciones integrales a las necesidades de nuestros clientes. <br> <br> El equipo de SL CORP está constantemente actualizándose, manteniendo un alto grado de especialización en los servicios, logrando que nuestros clientes estén plenamente satisfechos con la calidad y eficiencia de los resultados obtenidos.
+              Ofrecer un servicio de alta calidad a través de la consultoría fiscal y defensa especializada en materia
+              administrativa, laboral, seguridad social, mercantil y societario, dando soluciones integrales a las
+              necesidades de nuestros clientes. <br> <br> El equipo de SL CORP está constantemente actualizándose,
+              manteniendo un alto grado de especialización en los servicios, logrando que nuestros clientes estén
+              plenamente satisfechos con la calidad y eficiencia de los resultados obtenidos.
             </div>
             <div class="S2-text-left texto-seccion-izquierdo texto-seccion-dos-responsive">
               <h1>Nuestra <br> visión</h1>
               <div class="S2-text-right">
-                Ofrecer un servicio de alta calidad a través de la consultoría fiscal y defensa especializada en materia administrativa, laboral, seguridad social, mercantil y societario, dando soluciones integrales a las necesidades de nuestros clientes. El equipo de SL CORP está constantemente actualizándose, manteniendo un alto grado de especialización en los servicios, logrando que nuestros clientes estén plenamente satisfechos con la calidad y eficiencia de los resultados obtenidos.
+                Ofrecer un servicio de alta calidad a través de la consultoría fiscal y defensa especializada en materia
+                administrativa, laboral, seguridad social, mercantil y societario, dando soluciones integrales a las
+                necesidades de nuestros clientes. El equipo de SL CORP está constantemente actualizándose, manteniendo
+                un alto grado de especialización en los servicios, logrando que nuestros clientes estén plenamente
+                satisfechos con la calidad y eficiencia de los resultados obtenidos.
               </div>
               <a href="contacto.html">CONTÁCTANOS</a>
             </div>
           </div>
         </div>
       </div>
-      </section>
+    </section>
 
 
   </div>
-</div>
+  </div>
+
+  <!--=============== PRE-LOADER ===============-->
+  <script src="assets/js/loader.js"></script>
 </body>
 
 </html>

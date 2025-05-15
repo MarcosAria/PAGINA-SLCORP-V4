@@ -12,7 +12,9 @@
   /* Cambiado de scroll a auto para mejor rendimiento */
   scroll-snap-type: y mandatory;
   -webkit-overflow-scrolling: touch;
-  /* Mejor scrolling en iOS */
+  overflow-x: hidden;
+ 
+  
 }
 
 .slides-base {
@@ -402,8 +404,29 @@ a:hover {
 /* Pantallas grandes (1200px - 1600px) */
 @media screen and (max-width: 1400px) {
   .news-slider {
-    max-width: 500px;
+    max-width: 600px;
+    transform: translateY(12%);
+    
+
   }
+
+  .news-slider__ctr {
+    margin-top: -45px;
+  }
+
+  .news-slider__arrow.news-slider-prev {
+    left: -50px;
+  }
+
+  .news-slider__arrow.news-slider-next {
+    right: -50px;
+  }
+
+ 
+  
+  
+ 
+
 }
 
 /* Tablets grandes (992px - 1200px) */
@@ -841,7 +864,8 @@ a:hover {
 @media (max-width: 1600px) {
   .indice-grid {
     grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-    gap: 18px;
+    gap: 15px;
+    margin-top: -40px;
   }
 
   .indice-item {
