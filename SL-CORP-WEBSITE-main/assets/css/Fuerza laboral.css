@@ -346,6 +346,13 @@ li {
   .imagen-S5{
     margin-top: 30px;
   }
+   .h2-pequeño-S5{
+    font-size: 1.9rem !important;
+  }
+  .p-pequeño-S5{
+    font-size: 0.8rem !important;
+    margin-bottom: 20px !important;
+  }
 }
 @media (min-height: 1000px) {
  
