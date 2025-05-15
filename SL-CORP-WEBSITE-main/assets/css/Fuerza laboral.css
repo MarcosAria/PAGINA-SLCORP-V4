@@ -290,16 +290,29 @@ li {
     font-size: 0.8rem;
   }
   .h2-pequeño {
-    font-size: 17px !important;
+    font-size: 17px;
   }
   .p-pequeño {
-    font-size: 12px !important;
+    font-size: 12px;
   }
-      .imagen-persona img {
-    margin-top: -70px;
+  .imagen-persona img {
      margin-bottom: -70px; /* Para que la imagen esté al final */
+     height: 60vh;
+  }
+  
+  .h2-pequeño-S5{
+    font-size: 2rem !important;
+  }
+  .p-pequeño-S5{
+    font-size: 0.95rem !important;
+    margin-bottom: 20px !important;
+  }
+  .info a {
+  font-size: 0.9rem;
+  
   }
 }
+
 
 @media (max-width: 380px) {
   
@@ -330,4 +343,55 @@ li {
   .imagen-persona img {
     margin-top: -50px;
   }
+  .imagen-S5{
+    margin-top: 30px;
+  }
+}
+@media (min-height: 1000px) {
+ 
+  .imagen-persona {
+    order: 2;
+    
+  }
+  .trabajador {
+    flex-direction: column;
+    text-align: center;
+    padding: 20px;
+    gap: 0px;
+
+  }
+  .imagen-persona img {
+    height: 60vh;
+    margin-top: -5px;
+   
+  }
+
+  .info h2 {
+    font-size: 4rem;
+    text-align: center;
+  }
+
+  .info p {
+    font-size: 1.4rem;
+    text-align: justify;
+    margin-bottom: 2vh;
+  }
+  .info h3 {
+    font-size: 1.8rem;
+    text-align: center;
+  }
+  .info a {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    padding: 1.5vh 2vw;
+  }
+  .imagen-persona img {
+    height: 60vh;
+  }
+  .info {
+    margin-top: 10vh;
+}
+
 }
