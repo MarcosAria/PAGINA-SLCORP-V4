@@ -73,13 +73,7 @@
   transition: transform 0.4s ease;
 }
 
-.imagen-central:hover {
-  transform: translate(-50%, -50%) scale(1.15);
-  /* Mantén el translate y añade scale */
-  z-index: 2000;
-  transition: transform 0.4s ease;
-  /* Transición suave */
-}
+
 
 .S2-text-left {
   display: flex;

@@ -5,56 +5,70 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  height: 100vh; /* Asegura que ocupe toda la altura de la pantalla */
 }
-.fondo-3 {
-  background-image: url("../img/Fondo-trabadores-3.png") !important;
-}
-.trabajador {
+
+.trabajador-container {
   display: flex;
-  justify-content: space-between;
-  margin: 0 5vw;
-  padding: 40px;
-  gap: 40px;
+  width: 100%;
+  height: 100%;
 }
-.trabajador-lejos {
-  gap: 0px;
+
+.imagen-persona {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 200px;
 }
 
 .imagen-persona img {
-  height: 60vw;
+  max-width: 80vh;
   object-fit: contain;
-  margin-left: -4vw;
   transition: transform 0.3s ease;
 }
+
 .imagen-persona:hover img {
   transform: scale(1.05);
-  transition: transform 0.3s ease;
 }
-.info {
-  color: white;
+
+.info-container {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 100px;
   text-align: right;
-  margin-top: 20vh;
 }
+
+.info {
+  
+  color: white;
+  margin-right: 7vw;
+}
+
 .info h2 {
   font-size: 4.5rem;
   margin-bottom: 3vh;
   line-height: 0.9;
   font-family: "Buenard", serif;
 }
+
 .info h3 {
   font-size: 1.5rem;
   font-style: italic;
   font-weight: 700;
   margin-bottom: 2vh;
 }
+
 .info p {
   font-size: 1.2rem;
   line-height: 1.4;
   font-weight: 500;
   margin-bottom: 10vh;
 }
+
 .info b {
-  /*color: #ffd700;*/
   font-family: "Buenard", serif;
 }
 
@@ -70,15 +84,12 @@
   pointer-events: auto;
   font-weight: 700;
 }
-.info a::after {
-  /*Después de haber clickeado el botón*/
-  color: black; /* Color del texto */
-  text-decoration: none; /* Sin subrayado */
-}
+
 .info a:hover {
   background: rgba(255, 255, 255, 0.651);
   transform: translateY(-2px);
 }
+
 
 /* TARJETAS DE trabajador */
 .contenedor-trabajador {
@@ -157,11 +168,6 @@ li {
   .info p {
     font-size: 1.1rem;
   }
-  .imagen-persona img {
-    height: 65vw;
-    margin-top: 5vh;
-    margin-left: -5vw;
-  }
   .trabajador {
     gap: 0px;
   }
@@ -173,10 +179,6 @@ li {
   }
   .info p {
     font-size: 1rem;
-  }
-  .imagen-persona img {
-    height: 70vw;
-    margin-top: 5vh;
   }
   .info h3 {
     font-size: 1.5rem;
@@ -208,17 +210,9 @@ li {
     margin-top: 100px;
   }
 
-  .imagen-persona {
-    order: 2;
-    
-  }
+  
   .imagen-persona:hover {
     transform: none;
-  }
-  .imagen-persona img {
-    height: 500px;
-    margin-top: -5px;
-   
   }
 
   .info h2 {
@@ -261,16 +255,23 @@ li {
     box-shadow: none;
   }
 }
-@media (max-width: 700px) {
-  .trabajador-card h2 {
-    font-size: 1.3rem;
+@media (max-width: 768px) {
+  .trabajador-container {
+    flex-direction: column;
   }
-  .trabajador-card p,
-  li {
-    font-size: 0.9rem;
+  
+  .info-container {
+    flex: none;
+    height: 60vh;
   }
-  .trabajador-icono {
-    font-size: 2.3rem;
+  
+  .info {
+    max-width: 90%;
+    text-align: center;
+  }
+  
+  .info h2 {
+    font-size: 2.5rem;
   }
 }
 
@@ -295,11 +296,6 @@ li {
   .p-pequeño {
     font-size: 12px;
   }
-  .imagen-persona img {
-     margin-bottom: -70px; /* Para que la imagen esté al final */
-     height: 60vh;
-  }
-  
   .h2-pequeño-S5{
     font-size: 2rem !important;
   }
@@ -340,9 +336,6 @@ li {
   .trabajador-duo-pequeño {
     gap: 10px !important;
   }
-  .imagen-persona img {
-    margin-top: -50px;
-  }
   .imagen-S5{
     margin-top: 30px;
   }
@@ -354,51 +347,4 @@ li {
     margin-bottom: 20px !important;
   }
 }
-@media (min-height: 1000px) {
- 
-  .imagen-persona {
-    order: 2;
-    
-  }
-  .trabajador {
-    flex-direction: column;
-    text-align: center;
-    padding: 20px;
-    gap: 0px;
 
-  }
-  .imagen-persona img {
-    height: 60vh;
-    margin-top: -5px;
-   
-  }
-
-  .info h2 {
-    font-size: 4rem;
-    text-align: center;
-  }
-
-  .info p {
-    font-size: 1.4rem;
-    text-align: justify;
-    margin-bottom: 2vh;
-  }
-  .info h3 {
-    font-size: 1.8rem;
-    text-align: center;
-  }
-  .info a {
-    display: flex;
-    text-align: center;
-    justify-content: center;
-    font-size: 1.2rem;
-    padding: 1.5vh 2vw;
-  }
-  .imagen-persona img {
-    height: 60vh;
-  }
-  .info {
-    margin-top: 10vh;
-}
-
-}
