@@ -147,21 +147,21 @@ textarea {
 
 
 /* RESPONSIVE - VERSIÓN TABLET Y MÓVIL */
-@media (max-width: 1500px) {
+@media (max-width: 2000px) {
   .contacto-container {
 
     height: 100%;
   }
 
   .contacto-form {
-    width: 60%;
+    width: 50%;
     height: 620px;
     padding: 40px 30px;
     margin-top: 50px;
   }
 
   .left {
-    width: 25%;
+    width: 20%;
     height: 620px;
     padding: 40px 30px;
     margin-top: 50px;
@@ -631,7 +631,7 @@ textarea {
 
 /* ===== RESPONSIVIDAD ===== */
 
-@media (max-width: 1500px) {
+@media (max-width: 1800px) {
   .mapa {
     padding: 60px 20px;
   }

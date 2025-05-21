@@ -79,9 +79,10 @@ header a{
     align-items: center;
     justify-content: center;
     text-decoration: none;
+    color:black;
 }
 .carousel .list .item .buttons a:visited{
-   color:#000;
+   color:black;
 }
 .carousel .list .item .buttons a:nth-child(2){
     background-color: transparent;
