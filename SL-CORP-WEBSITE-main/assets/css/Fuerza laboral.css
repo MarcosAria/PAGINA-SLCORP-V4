@@ -1,5 +1,5 @@
 #Trabajador-slide1 {
-  background-image: url("../img/MacBook\ Air\ -\ 3\ \(1\).png");
+  background-image: url("../img/Fondo-trabajadores-1.png");
   background-size: cover;
   background-position: center;
   display: flex;
@@ -100,6 +100,14 @@
   background-size: cover;
   background-position: center;
 }
+.fondo-3{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("../img/Fondo-trabadores-3.png");
+  background-size: cover;
+  background-position: center;
+}
 .trabajador-duo {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
@@ -150,13 +158,7 @@ li {
   margin-bottom: 20px;
 }
 
-.card-pequeña h2 {
-  font-size: 1.8rem;
-}
-.card-pequeña p,
-li {
-  font-size: 0.9rem;
-}
+
 
 /* TARJETAS RESPONSIVE */
 
@@ -189,11 +191,8 @@ li {
   .p-pequeño {
     font-size: 13px !important;
   }
-  .trabajador-duo-pequeño {
-    gap: 10px !important;
-  }
 }
-@media (max-width: 1050px) and (min-height: 1100px) {
+@media (max-width: 1400px) and (min-height: 1100px) {
   .trabajador-container {
     flex-direction: column;
     text-align: center;
@@ -203,7 +202,7 @@ li {
 
   .info {
     margin-right: 0px;
-    padding: 6vh 6vw 2vh 6vw;
+    padding: 6vh 6vw 0vh 6vw;
 
   }
 
@@ -238,11 +237,16 @@ li {
     display: flex;
     text-align: center;
     justify-content: center;
-    font-size: 1.2rem;
-    padding: 1.5vh 2vw;
+    font-size: 1.4rem;
+    padding: 1.2vh 2vw;
+    margin-top: 20px;
   }
 }
+
 @media (max-width: 900px) {
+  .imagen-persona:hover img {
+    transform: none;
+}
   .trabajador-duo {
     grid-template-columns: 1fr;
     max-width: 700px;
@@ -280,43 +284,80 @@ li {
   }
 }
 
-@media (max-width: 450px) {
-  .scrollable-slide {
-    height: auto !important; /* Anula el 100vh */
-    overflow-y: auto !important; /* Habilita scroll vertical */
-    padding: 30px 0px;
-    min-height: 100vh;
-  }
+
+
+@media (max-width: 680px) {
   .trabajador-card h2 {
     font-size: 1.2rem;
-    margin-bottom: 10px;
-  }
-  .trabajador-card p,
-  li {
-    font-size: 0.8rem;
-  }
-  .h2-pequeño {
-    font-size: 17px;
-  }
-  .p-pequeño {
-    font-size: 12px;
-  }
-  .h2-pequeño-S5{
-    font-size: 2rem !important;
-  }
-  .p-pequeño-S5{
-    font-size: 0.95rem !important;
-    margin-bottom: 20px !important;
-  }
-  .info a {
-  font-size: 0.9rem;
-  
-  }
 }
+  .trabajador-card p, li {
+    font-size: 0.9rem;
+}
+  .info h2 {
+        font-size: 2.6rem;
+        margin-top: 30px;
+        margin-bottom: 20px;
+    }
+    .info h3 {
+        font-size: 1.2rem;
+    }
+    .info a {
+    font-size: 1.2rem;
+}
+  .imagen-persona img {
+    max-width: 50vh;
+    object-fit: cover;
+    margin-top: -30px;
+}
+.imagen-persona {
+    margin-top: 0px;
+    order:2;
+  }
+  .info {
+        margin: 0px;
+    }
+
+.info-container {
+        height: 50vh;
+    }
+
+    .scrollable-slide {
+    height: auto !important; /* Anula el 100vh */
+    overflow-y: auto !important; /* Habilita scroll vertical */
+    padding: 20px 0; /* Espaciado interno */
+    min-height: 100vh;
+}
+  }
+
 
 
 @media (max-width: 380px) {
-  
+  .info p {
+    font-size: 0.8rem;
+  }
+  .info h3{
+    font-size: 0.9rem;
+  }
+      .info a {
+        font-size: 1rem;
+    }
+  .imagen-persona img {
+    max-width: 50vh;
+    object-fit: cover;
+    margin-top: -30px;
+}
+.imagen-persona {
+    margin-top: 0px;
+    order:2;
+  }
+  .info {
+        margin: 0px;
+    }
+
+.info-container {
+        height: 50vh;
+    }
+
   .trabajador-card h2 {
     font-size: 1rem;
   }
@@ -331,16 +372,10 @@ li {
   .trabajador-card {
     padding: 15px 25px;
   }
-  /*Tarjetas con texto largo*/
-  .h2-pequeño {
-    font-size: 0.9rem !important;
+  .info h2 {
+    font-size: 1.7rem;
   }
-  .p-pequeño {
-    font-size: 10px !important;
-  }
-  .trabajador-duo-pequeño {
-    gap: 10px !important;
-  }
+  
   .imagen-S5{
     margin-top: 30px;
   }

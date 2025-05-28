@@ -1337,7 +1337,7 @@
   }
 
 }
-@media (width:540px) and (height: 720px) {
+@media (width:540px) and (min-height: 720px) {
 
   .testimonios-cta p {
     font-size: 15px;
@@ -1390,7 +1390,7 @@
   }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 480px) {
   .servicios {
     gap: 12px;
     transform: translateY(-190px);
